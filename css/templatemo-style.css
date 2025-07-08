@@ -569,6 +569,9 @@ http://www.templatemo.com/tm-515-eatery
   height: 100%;          /* Make all images the same height */
   object-fit: cover;      /* Crop the image nicely */
   transition: 0.5s;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 4px;        /* Optional: rounded corners */
+  
   }
 
 
@@ -580,7 +583,9 @@ http://www.templatemo.com/tm-515-eatery
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    width: 102%;
+    width: 100%;
+    margin: 8px 0;           /* adds vertical spacing */
+   box-sizing: border-box; /* ensures padding/border doesn't break layout */
   }
 
   .menu-thumb .menu-info {
