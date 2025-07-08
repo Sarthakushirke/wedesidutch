@@ -453,7 +453,10 @@ http://www.templatemo.com/tm-515-eatery
   }
 
   .about-image {
-    position: absolute;
+    /* position: absolute; */
+    position: relative; /* or just remove 'position' altogether */
+    width: 100%;
+    height: auto;
   }
 
 
