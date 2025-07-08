@@ -645,22 +645,6 @@ http://www.templatemo.com/tm-515-eatery
     background: rgba(0,0,0,0.8);
   }
 
-  .zoom-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  padding: 8px 10px;
-  z-index: 3;
-  font-size: 18px;
-  color: #333;
-  transition: transform 0.3s;
-  }
-
-  .menu-thumb:hover .zoom-icon {
-    transform: scale(1.2);
-  }
 
 
   /*---------------------------------------
