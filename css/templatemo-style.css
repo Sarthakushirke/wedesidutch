@@ -414,6 +414,18 @@ http://www.templatemo.com/tm-515-eatery
     background-image: url(../images/veg_thali_slider.jpg);
   }
 
+    .slider .item-fourth {
+    background-image: url(../images/Chicken_thali.jpg);
+  }
+
+  .slider .item-fifth {
+    background-image: url(../images/chai_samosa.jpg);
+  }
+
+  .slider .item-sixth {
+    background-image: url(../images/Fish_thali.jpg);
+  }
+
   .slider .item-second .section-btn {
     background: #292929;
   }
@@ -433,6 +445,33 @@ http://www.templatemo.com/tm-515-eatery
     border-color: transparent;
     color: #ffffff;
   }
+
+
+  .slider .item-fourth .section-btn {
+    background: #292929;
+  }
+
+  .slider .item-fourth .section-btn:hover {
+    background: #ffffff;
+  }
+
+  .slider .item-fifth .section-btn {
+    background: #292929;
+  }
+
+  .slider .item-fifth .section-btn:hover {
+    background: #ffffff;
+  }
+
+  .slider .item-sixth .section-btn {
+    background: #292929;
+  }
+
+  .slider .item-sixth .section-btn:hover {
+    background: #ffffff;
+  }
+
+  
 
 
 
