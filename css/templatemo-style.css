@@ -456,11 +456,15 @@ http://www.templatemo.com/tm-515-eatery
   }
 
   .slider .item-fifth .section-btn {
-    background: #292929;
+    background: transparent;
+    border: 1px solid #ffffff;
   }
 
-  .slider .item-fifth .section-btn:hover {
-    background: #ffffff;
+  .slider .item-fifth .section-btn:hover,
+  .slider .item-fifth .section-btn:focus {
+    background: #ce3232;
+    border-color: transparent;
+    color: #ffffff;
   }
 
   .slider .item-sixth .section-btn {
