@@ -889,6 +889,12 @@ http://www.templatemo.com/tm-515-eatery
     color: #f9f9f9;
   }
 
+  .footer-open-hour * {
+  font-weight: bold;
+  color: #ffffff; /* white text for contrast against dark background */
+  }
+
+
 
 
   /*---------------------------------------
