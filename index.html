@@ -43,14 +43,34 @@ http://www.templatemo.com/tm-515-eatery
      </section>
 
      <!-- Scrolling Strip -->
-     <div style="background-color: #ffefc1; color: #333; padding: 8px 0; overflow: hidden; white-space: nowrap; font-weight: bold;">
-          <div style="display: inline-block; animation: scroll-left 15s linear infinite;">
+     <div id="scrolling-strip">
+          <div class="scrolling-text">
                &nbsp;&nbsp;&nbsp;Pregnancy Tiffin&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Student Tiffin&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Health Package Available&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
           </div>
      </div>
 
      <!-- Animation Keyframes -->
      <style>
+     #scrolling-strip {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ffefc1;
+          color: #333;
+          padding: 8px 0;
+          white-space: nowrap;
+          font-weight: bold;
+          z-index: 1060;
+          overflow: hidden;
+          text-align: center;
+     }
+
+     #scrolling-strip .scrolling-text {
+          display: inline-block;
+          animation: scroll-left 15s linear infinite;
+     }
+
      @keyframes scroll-left {
           0% {
                transform: translateX(100%);
@@ -59,7 +79,14 @@ http://www.templatemo.com/tm-515-eatery
                transform: translateX(-100%);
           }
      }
+
+     /* Push navbar down below the strip */
+     .custom-navbar.navbar-fixed-top {
+          margin-top: 40px; /* or match strip height */
+          z-index: 1040;
+     }
      </style>
+
 
      <!-- MENU -->
      <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
