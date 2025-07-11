@@ -724,10 +724,46 @@ http://www.templatemo.com/tm-515-eatery
       TESTIMONIAL             
   -----------------------------------------*/
 
-  #testimonial {
+  /* #testimonial {
     background: url('../images/chicken_curry.jpg') center center no-repeat;
     background-size: cover;
+  } */
+
+  #testimonial {
+    position: relative;
+    color: white;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundSlide 15s infinite ease-in-out;
   }
+
+  @keyframes backgroundSlide {
+    0% {
+      background-image: url('../images/chicken_curry.jpg');
+    }
+    16.6% {
+      background-image: url('../images/tiffin.jpg');
+    }
+    33.2% {
+      background-image: url('../images/vada_pav_slider.jpg');
+    }
+    49.8% {
+      background-image: url('../images/veg_thali_slider_1.jpg');
+    }
+    66.4% {
+      background-image: url('../images/mutton_khima.jpg');
+    }
+    83% {
+      background-image: url('../images/Dabali.jpg');
+    }
+    100% {
+      background-image: url('../images/chicken_curry.jpg');
+    }
+  }
+
+
+
 
   #testimonial .owl-dots {
     position: relative;
