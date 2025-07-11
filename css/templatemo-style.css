@@ -737,28 +737,29 @@ http://www.templatemo.com/tm-515-eatery
 
 
   @keyframes backgroundSlide {
-    0%, 10% {
+    0%, 13.8% {
       background-image: url('../images/chicken_curry.jpg');
     }
-    16%, 26% {
+    13.9%, 27.6% {
       background-image: url('../images/tiffin.jpg');
     }
-    32%, 42% {
+    27.7%, 41.4% {
       background-image: url('../images/vada_pav_slider.jpg');
     }
-    48%, 58% {
+    41.5%, 55.2% {
       background-image: url('../images/veg_thali_slider_1.jpg');
     }
-    64%, 74% {
+    55.3%, 69% {
       background-image: url('../images/mutton_khima.jpg');
     }
-    80%, 90% {
+    69.1%, 82.8% {
       background-image: url('../images/Dabali.jpg');
     }
-    96%, 100% {
+    82.9%, 100% {
       background-image: url('../images/chicken_curry.jpg');
     }
   }
+
 
 
   #testimonial .owl-dots {
