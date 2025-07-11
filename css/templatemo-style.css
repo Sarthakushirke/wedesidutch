@@ -948,6 +948,27 @@ http://www.templatemo.com/tm-515-eatery
   }
 
 
+  .footer-info .collaborations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+  }
+
+  .footer-info .collaborations a img {
+    height: 50px; /* You can reduce to 40px or increase to 60px as needed */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-info .collaborations a img:hover {
+    transform: scale(1.1);
+  }
+
+
+
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
