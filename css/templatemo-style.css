@@ -324,6 +324,12 @@ http://www.templatemo.com/tm-515-eatery
     }
   }
 
+  /* Push navbar down by height of the scrolling strip */
+  .navbar {
+      margin-top: 40px;
+  }
+
+
 
 
   /*---------------------------------------
