@@ -5,3 +5,8 @@
 #snacks img:hover {
      transform: scale(1.05);
 }
+
+.snack-price {
+    color: #d2691e;
+    font-weight: bold;
+}
