@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro Animation</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+    }
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .skip-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="introVideo" autoplay muted>
+    <source src="assets/modak.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <button class="skip-btn" onclick="redirect()">Skip</button>
+
+  <script>
+    const video = document.getElementById('introVideo');
+
+    // When video ends, redirect
+    video.addEventListener('ended', redirect);
+
+    // Redirect function
+    function redirect() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+</body>
+</html>
