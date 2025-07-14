@@ -35,22 +35,18 @@
 </head>
 
 <script>
-  const video = document.getElementById('popupVideo');
+function closeVideo() {
   const modal = document.getElementById('videoModal');
-
-  // Auto-close when video ends
-  video.addEventListener('ended', () => {
-    modal.style.display = 'none';
-  });
-
-  // Optional: Close button
-  function closeVideo() {
-    modal.style.display = 'none';
-    video.pause();
-    video.currentTime = 0;
-  }
+  modal.style.display = 'none';
+  const video = document.getElementById('popupVideo');
+  video.pause();
+  video.currentTime = 0;
+}
+// Automatically close when video ends
+document.getElementById('popupVideo').addEventListener('ended', function () {
+  closeVideo();
+});
 </script>
-
 
 <body>
 
@@ -58,7 +54,7 @@
      <div id="videoModal">
      <div class="video-content">
      <button class="close-btn" onclick="closeVideo()">×</button>
-     <video id="popupVideo" autoplay playsinline>
+     <video id="popupVideo" autoplay muted playsinline>
           <source src="images/wedesidutch_open.mp4" type="video/mp4">
           Your browser does not support the video tag.
      </video>
