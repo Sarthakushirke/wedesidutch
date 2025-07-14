@@ -1,0 +1,7 @@
+/* Responsive snacks section */
+#snacks img {
+     transition: transform 0.3s ease;
+}
+#snacks img:hover {
+     transform: scale(1.05);
+}
