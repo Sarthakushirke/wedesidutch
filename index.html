@@ -33,15 +33,24 @@
      <link rel="stylesheet" href="css/templatemo-style.css">
 
 </head>
+
 <script>
-function closeVideo() {
-  const modal = document.getElementById('videoModal');
-  modal.style.display = 'none';
   const video = document.getElementById('popupVideo');
-  video.pause();
-  video.currentTime = 0;
-}
+  const modal = document.getElementById('videoModal');
+
+  // Auto-close when video ends
+  video.addEventListener('ended', () => {
+    modal.style.display = 'none';
+  });
+
+  // Optional: Close button
+  function closeVideo() {
+    modal.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  }
 </script>
+
 
 <body>
 
@@ -49,12 +58,13 @@ function closeVideo() {
      <div id="videoModal">
      <div class="video-content">
      <button class="close-btn" onclick="closeVideo()">×</button>
-     <video id="popupVideo" controls autoplay>
+     <video id="popupVideo" autoplay muted playsinline>
           <source src="images/wedesidutch_open.mp4" type="video/mp4">
           Your browser does not support the video tag.
      </video>
      </div>
      </div>
+
 
 
 
