@@ -42,11 +42,15 @@ function closeVideo() {
   video.pause();
   video.currentTime = 0;
 }
-// Automatically close when video ends
-document.getElementById('popupVideo').addEventListener('ended', function () {
-  closeVideo();
+
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('popupVideo');
+  video.addEventListener('ended', function () {
+    closeVideo();
+  });
 });
 </script>
+
 
 <body>
 
