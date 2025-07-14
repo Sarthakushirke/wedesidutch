@@ -33,16 +33,29 @@
      <link rel="stylesheet" href="css/templatemo-style.css">
 
 </head>
+<script>
+function closeVideo() {
+  const modal = document.getElementById('videoModal');
+  modal.style.display = 'none';
+  const video = document.getElementById('popupVideo');
+  video.pause();
+  video.currentTime = 0;
+}
+</script>
+
 <body>
 
-     <!-- Intro Video -->
-     <div id="intro-container">
-     <video id="introVideo" playsinline controls>
-     <source src="images/wedesidutch_open.mp4" type="video/mp4">
-     Your browser does not support the video tag.
+     <!-- Video Popup Modal -->
+     <div id="videoModal">
+     <div class="video-content">
+     <button class="close-btn" onclick="closeVideo()">×</button>
+     <video id="popupVideo" controls autoplay>
+          <source src="images/wedesidutch_open.mp4" type="video/mp4">
+          Your browser does not support the video tag.
      </video>
-     <button id="skip-btn">Skip</button>
      </div>
+     </div>
+
 
 
 
@@ -107,6 +120,46 @@
           margin-top: 35px; /* or match strip height */
           z-index: 1040;
      }
+
+     #videoModal {
+     position: fixed;
+     top: 0; left: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(0,0,0,0.8);
+     z-index: 9999;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     }
+
+     .video-content {
+     position: relative;
+     width: 90%;
+     max-width: 800px;
+     background: #000;
+     border-radius: 10px;
+     overflow: hidden;
+     }
+
+     #popupVideo {
+     width: 100%;
+     height: auto;
+     display: block;
+     }
+
+     .close-btn {
+     position: absolute;
+     top: 8px;
+     right: 12px;
+     font-size: 30px;
+     color: white;
+     background: transparent;
+     border: none;
+     cursor: pointer;
+     z-index: 10000;
+     }
+
      </style>
 
 
